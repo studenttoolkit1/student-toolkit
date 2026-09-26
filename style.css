@@ -1,0 +1,808 @@
+/* =========================================
+   STUDENT TOOLKIT - MAIN STYLES
+   ========================================= */
+
+
+/* ---------- BASIC RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* ---------- CONTAINER ---------- */
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e8edf5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #2563eb;
+    white-space: nowrap;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #526070;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #2563eb;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    padding: 85px 0;
+    background: linear-gradient(135deg, #eef5ff 0%, #ffffff 55%, #f4f8ff 100%);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #e1edff;
+    color: #2563eb;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 68px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero-text > p {
+    max-width: 650px;
+    color: #5d6979;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #ffffff;
+    color: #2563eb;
+    border: 1px solid #d8e3f5;
+}
+
+.btn-secondary:hover {
+    border-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+
+/* ---------- HERO CARD ---------- */
+
+.hero-card {
+    background: #ffffff;
+    border: 1px solid #e4ebf5;
+    border-radius: 22px;
+    padding: 38px;
+    box-shadow: 0 18px 50px rgba(30, 64, 175, 0.10);
+}
+
+.hero-card-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    background: #e8f1ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    margin-bottom: 22px;
+}
+
+.hero-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    color: #657184;
+    margin-bottom: 28px;
+}
+
+.mini-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.mini-stats div {
+    background: #f7f9fc;
+    padding: 14px 8px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.mini-stats strong {
+    display: block;
+    color: #2563eb;
+    font-size: 18px;
+}
+
+.mini-stats span {
+    display: block;
+    color: #687487;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+
+/* ---------- GENERAL SECTIONS ---------- */
+
+.section {
+    padding: 90px 0;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.section-label {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.15;
+    margin-bottom: 14px;
+}
+
+.section-heading p {
+    color: #667386;
+}
+
+
+/* ---------- TOOLS GRID ---------- */
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tool-card {
+    background: #ffffff;
+    border: 1px solid #e3eaf3;
+    border-radius: 18px;
+    padding: 28px;
+    display: flex;
+    gap: 20px;
+    transition: 0.25s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(25, 55, 100, 0.08);
+}
+
+.featured-tool {
+    border-color: #bcd4ff;
+}
+
+.tool-icon {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    border-radius: 15px;
+    background: #eaf2ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.tool-content {
+    flex: 1;
+}
+
+.tool-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    color: #16803a;
+    background: #e7f8ed;
+    padding: 5px 9px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+.tool-badge.coming-soon {
+    color: #687487;
+    background: #f0f2f5;
+}
+
+.tool-card h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.tool-card p {
+    color: #667386;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.tool-link {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.disabled-link {
+    color: #9aa4b2;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* ---------- CALCULATOR SECTION ---------- */
+
+.calculator-section {
+    padding: 90px 0;
+    background: #eef5ff;
+}
+
+.calculator-box {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #dfe8f4;
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 15px 45px rgba(30, 64, 175, 0.08);
+}
+
+.calculator-tabs {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #e8edf4;
+    padding-bottom: 14px;
+    margin-bottom: 30px;
+    overflow-x: auto;
+}
+
+.calculator-tab {
+    border: none;
+    background: #f4f6f9;
+    color: #5e6a7b;
+    padding: 11px 15px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.calculator-tab.active {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.calculator-content {
+    display: none;
+}
+
+.calculator-content.active {
+    display: block;
+}
+
+.calculator-content h3 {
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+.calculator-description {
+    color: #6b7686;
+    margin-bottom: 25px;
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.input-group input {
+    width: 100%;
+    border: 1px solid #d8e0eb;
+    border-radius: 10px;
+    padding: 13px 14px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.input-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+.calculate-btn {
+    border: none;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.calculate-btn:hover {
+    background: #1d4ed8;
+}
+
+.calculator-result {
+    margin-top: 20px;
+    padding: 17px;
+    background: #f4f8ff;
+    border: 1px solid #dbe8ff;
+    color: #2454a6;
+    border-radius: 10px;
+    font-weight: 700;
+    min-height: 54px;
+}
+
+
+/* ---------- STUDY TOOLS ---------- */
+
+.resource-card {
+    background: #ffffff;
+    border: 1px solid #e3eaf3;
+    border-radius: 18px;
+    padding: 28px;
+    transition: 0.25s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(25, 55, 100, 0.08);
+}
+
+.resource-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.resource-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.resource-card p {
+    color: #687487;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.coming-text {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+/* ---------- RESOURCES ---------- */
+
+.resources-section {
+    background: #ffffff;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.article-card {
+    border: 1px solid #e3eaf3;
+    border-radius: 18px;
+    padding: 30px;
+    background: #ffffff;
+    transition: 0.25s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(25, 55, 100, 0.08);
+}
+
+.article-icon {
+    font-size: 34px;
+    margin-bottom: 16px;
+}
+
+.article-card h3 {
+    font-size: 21px;
+    margin-bottom: 9px;
+}
+
+.article-card p {
+    color: #687487;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.article-link {
+    color: #2563eb;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+
+/* ---------- WHY SECTION ---------- */
+
+.why-section {
+    padding: 90px 0;
+    background: #f7f9fc;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.benefit {
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e4eaf2;
+    border-radius: 18px;
+    padding: 28px 20px;
+}
+
+.benefit-icon {
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+
+.benefit h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.benefit p {
+    color: #687487;
+    font-size: 14px;
+}
+
+
+/* ---------- FAQ ---------- */
+
+.faq-section {
+    background: #ffffff;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #f8fafc;
+    border: 1px solid #e4eaf2;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+}
+
+.faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 18px 0;
+    font-weight: 700;
+    position: relative;
+    padding-right: 30px;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 22px;
+    color: #2563eb;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item p {
+    color: #667386;
+    padding: 0 0 18px;
+    font-size: 14px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+    background: #111827;
+    color: #ffffff;
+    padding-top: 55px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-brand .logo {
+    color: #ffffff;
+}
+
+.footer-brand p {
+    color: #aab3c2;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #c6ced9;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #263244;
+    padding: 20px 0;
+    color: #8f9bad;
+    font-size: 13px;
+}
+
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card {
+        max-width: 600px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .header-content {
+        min-height: auto;
+        padding: 17px 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar {
+        width: 100%;
+        gap: 15px;
+        overflow-x: auto;
+        padding-bottom: 3px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-text > p {
+        font-size: 16px;
+    }
+
+    .section,
+    .calculator-section,
+    .why-section {
+        padding: 65px 0;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .input-row {
+        grid-template-columns: 1fr;
+    }
+
+    .calculator-box {
+        padding: 20px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-card {
+        padding: 25px;
+    }
+
+    .mini-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-card {
+        flex-direction: column;
+    }
+
+    .calculator-tabs {
+        flex-direction: column;
+    }
+
+    .calculator-tab {
+        width: 100%;
+    }
+
+}
