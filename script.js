@@ -250,3 +250,48 @@ document.addEventListener("keydown", function(event) {
         }
     }
 });
+// ================= AGE CALCULATOR =================
+
+function calculateAge() {
+
+    const birthDateInput = document.getElementById("birthDate");
+    const ageAtDateInput = document.getElementById("ageAtDate");
+    const result = document.getElementById("ageResult");
+
+    const birthDate = new Date(birthDateInput.value);
+    const ageAtDate = new Date(ageAtDateInput.value);
+
+    if (!birthDateInput.value || !ageAtDateInput.value) {
+        result.innerHTML = "Please select both dates.";
+        return;
+    }
+
+    if (birthDate > ageAtDate) {
+        result.innerHTML = "Date of birth cannot be after the calculation date.";
+        return;
+    }
+
+    let years = ageAtDate.getFullYear() - birthDate.getFullYear();
+    let months = ageAtDate.getMonth() - birthDate.getMonth();
+    let days = ageAtDate.getDate() - birthDate.getDate();
+
+    if (days < 0) {
+        months--;
+
+        const previousMonth = new Date(
+            ageAtDate.getFullYear(),
+            ageAtDate.getMonth(),
+            0
+        );
+
+        days += previousMonth.getDate();
+    }
+
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    result.innerHTML =
+        `You are <strong>${years} years, ${months} months, and ${days} days</strong> old.`;
+}
