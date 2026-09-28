@@ -735,6 +735,82 @@
     </div>
 
 </section>
+        <!-- ================= ATTENDANCE CALCULATOR ================= -->
+
+<section id="attendance-calculator" class="calculator-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                📅 STUDENT TOOL
+            </span>
+
+            <h2>Free Attendance Calculator</h2>
+
+            <p>
+                Calculate your attendance percentage and find out how many classes you can miss or need to attend.
+            </p>
+
+        </div>
+
+
+        <div class="calculator-box attendance-calculator-box">
+
+            <div class="input-row">
+
+                <div class="input-group">
+
+                    <label for="totalClasses">
+                        Total Classes
+                    </label>
+
+                    <input
+                        type="number"
+                        id="totalClasses"
+                        placeholder="e.g. 50"
+                        min="1"
+                        step="1">
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="attendedClasses">
+                        Classes Attended
+                    </label>
+
+                    <input
+                        type="number"
+                        id="attendedClasses"
+                        placeholder="e.g. 42"
+                        min="0"
+                        step="1">
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="calculate-btn"
+                onclick="calculateAttendance()">
+                Calculate Attendance
+            </button>
+
+
+            <div id="attendanceResult" class="calculator-result">
+                Your attendance percentage will appear here.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
         <!-- ================= STUDY TOOLS ================= -->
