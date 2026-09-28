@@ -3,6 +3,8 @@
 
     <url>
         <loc>https://studenttoolkit1.github.io/student-toolkit/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
     </url>
 
 </urlset>
