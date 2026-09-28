@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://studenttoolkit1.github.io/student-toolkit/sitemap.xml
