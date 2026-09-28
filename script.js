@@ -295,3 +295,84 @@ function calculateAge() {
     result.innerHTML =
         `You are <strong>${years} years, ${months} months, and ${days} days</strong> old.`;
 }
+// ================= GPA CALCULATOR =================
+
+function addGpaRow() {
+
+    const gpaRows = document.getElementById("gpaRows");
+
+    const row = document.createElement("div");
+
+    row.className = "gpa-row";
+
+    row.innerHTML = `
+        <input
+            type="text"
+            class="course-name"
+            placeholder="Course Name">
+
+        <input
+            type="number"
+            class="course-credit"
+            placeholder="Credit"
+            min="0"
+            step="0.5">
+
+        <select class="course-grade">
+
+            <option value="">Grade</option>
+            <option value="4.0">A+</option>
+            <option value="4.0">A</option>
+            <option value="3.7">A-</option>
+            <option value="3.3">B+</option>
+            <option value="3.0">B</option>
+            <option value="2.7">B-</option>
+            <option value="2.3">C+</option>
+            <option value="2.0">C</option>
+            <option value="1.7">C-</option>
+            <option value="1.3">D+</option>
+            <option value="1.0">D</option>
+            <option value="0.0">F</option>
+
+        </select>
+    `;
+
+    gpaRows.appendChild(row);
+}
+
+
+function calculateGPA() {
+
+    const rows = document.querySelectorAll(".gpa-row");
+
+    let totalCredits = 0;
+    let totalPoints = 0;
+
+    for (const row of rows) {
+
+        const credit = parseFloat(
+            row.querySelector(".course-credit").value
+        );
+
+        const grade = row.querySelector(".course-grade").value;
+
+        if (!credit || grade === "") {
+            continue;
+        }
+
+        totalCredits += credit;
+        totalPoints += credit * parseFloat(grade);
+    }
+
+    const result = document.getElementById("gpaResult");
+
+    if (totalCredits === 0) {
+        result.innerHTML = "Please enter your credits and grades.";
+        return;
+    }
+
+    const gpa = totalPoints / totalCredits;
+
+    result.innerHTML =
+        `Your GPA is <strong>${gpa.toFixed(2)}</strong>`;
+}
