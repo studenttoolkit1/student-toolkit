@@ -428,3 +428,39 @@ function calculateGrade() {
         `Percentage: <strong>${percentage.toFixed(2)}%</strong><br>
          Grade: <strong>${grade}</strong>`;
 }
+// ================= ATTENDANCE CALCULATOR =================
+
+function calculateAttendance() {
+
+    const totalClasses = parseFloat(
+        document.getElementById("totalClasses").value
+    );
+
+    const attendedClasses = parseFloat(
+        document.getElementById("attendedClasses").value
+    );
+
+    const result = document.getElementById("attendanceResult");
+
+    if (isNaN(totalClasses) || isNaN(attendedClasses)) {
+        result.innerHTML = "Please enter both values.";
+        return;
+    }
+
+    if (totalClasses <= 0) {
+        result.innerHTML = "Total classes must be greater than 0.";
+        return;
+    }
+
+    if (attendedClasses < 0 || attendedClasses > totalClasses) {
+        result.innerHTML =
+            "Classes attended must be between 0 and total classes.";
+        return;
+    }
+
+    const percentage =
+        (attendedClasses / totalClasses) * 100;
+
+    result.innerHTML =
+        `Your Attendance: <strong>${percentage.toFixed(2)}%</strong>`;
+}
