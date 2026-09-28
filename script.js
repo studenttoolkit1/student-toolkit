@@ -376,3 +376,55 @@ function calculateGPA() {
     result.innerHTML =
         `Your GPA is <strong>${gpa.toFixed(2)}</strong>`;
 }
+// ================= GRADE CALCULATOR =================
+
+function calculateGrade() {
+
+    const marksObtained = parseFloat(
+        document.getElementById("marksObtained").value
+    );
+
+    const totalMarks = parseFloat(
+        document.getElementById("totalMarks").value
+    );
+
+    const result = document.getElementById("gradeResult");
+
+    if (isNaN(marksObtained) || isNaN(totalMarks)) {
+        result.innerHTML = "Please enter both marks.";
+        return;
+    }
+
+    if (totalMarks <= 0) {
+        result.innerHTML = "Total marks must be greater than 0.";
+        return;
+    }
+
+    if (marksObtained < 0 || marksObtained > totalMarks) {
+        result.innerHTML =
+            "Marks obtained must be between 0 and total marks.";
+        return;
+    }
+
+    const percentage = (marksObtained / totalMarks) * 100;
+
+    let grade;
+
+    if (percentage >= 90) {
+        grade = "A+";
+    } else if (percentage >= 80) {
+        grade = "A";
+    } else if (percentage >= 70) {
+        grade = "B";
+    } else if (percentage >= 60) {
+        grade = "C";
+    } else if (percentage >= 50) {
+        grade = "D";
+    } else {
+        grade = "F";
+    }
+
+    result.innerHTML =
+        `Percentage: <strong>${percentage.toFixed(2)}%</strong><br>
+         Grade: <strong>${grade}</strong>`;
+}
