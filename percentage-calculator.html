@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Percentage Calculator - Free Online Calculator | Student Toolkit</title>
+
+    <meta name="description" content="Use Student Toolkit's free percentage calculator to calculate percentages, percentage increase, and percentage decrease quickly and easily.">
+
+    <meta name="keywords" content="percentage calculator, free percentage calculator, percentage increase calculator, percentage decrease calculator, calculate percentage, student percentage calculator">
+
+    <meta name="author" content="Student Toolkit">
+
+    <link rel="canonical" href="https://studenttoolkit1.github.io/student-toolkit/percentage-calculator.html">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1>Student Toolkit</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#tools">Student Tools</a>
+            <a href="index.html#study-tools">Study Tools</a>
+            <a href="index.html#resources">Resources</a>
+            <a href="index.html#faq">FAQ</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Free Percentage Calculator</h2>
+
+            <p>
+                Calculate percentages, percentage increase, and percentage decrease
+                quickly with our free online percentage calculator.
+            </p>
+        </div>
+    </section>
+
+    <section class="calculator-section">
+        <div class="container">
+
+            <h2>Percentage Calculator</h2>
+
+            <div class="calculator-card">
+
+                <h3>What is X% of Y?</h3>
+
+                <input
+                    type="number"
+                    id="percent1"
+                    placeholder="Enter percentage"
+                >
+
+                <input
+                    type="number"
+                    id="number1"
+                    placeholder="Enter number"
+                >
+
+                <button onclick="calculatePercentageOfNumber()">
+                    Calculate
+                </button>
+
+                <p id="result1"></p>
+
+            </div>
+
+
+            <div class="calculator-card">
+
+                <h3>What percentage is X of Y?</h3>
+
+                <input
+                    type="number"
+                    id="number2"
+                    placeholder="Enter part"
+                >
+
+                <input
+                    type="number"
+                    id="number3"
+                    placeholder="Enter total"
+                >
+
+                <button onclick="calculatePercentage()">
+                    Calculate
+                </button>
+
+                <p id="result2"></p>
+
+            </div>
+
+
+            <div class="calculator-card">
+
+                <h3>Percentage Increase or Decrease</h3>
+
+                <input
+                    type="number"
+                    id="originalNumber"
+                    placeholder="Original value"
+                >
+
+                <input
+                    type="number"
+                    id="newNumber"
+                    placeholder="New value"
+                >
+
+                <button onclick="calculatePercentageChange()">
+                    Calculate
+                </button>
+
+                <p id="result3"></p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="seo-content">
+        <div class="container">
+
+            <h2>Free Online Percentage Calculator</h2>
+
+            <p>
+                Our free percentage calculator helps students calculate percentages
+                quickly and easily. You can find a percentage of a number, determine
+                what percentage one number is of another, and calculate percentage
+                increase or decrease.
+            </p>
+
+            <h3>How to Calculate a Percentage</h3>
+
+            <p>
+                To calculate a percentage of a number, multiply the percentage by
+                the number and divide by 100. For example, 20% of 200 is 40.
+            </p>
+
+            <h3>Percentage Increase and Decrease</h3>
+
+            <p>
+                The percentage change calculator helps you find how much a value has
+                increased or decreased compared with its original value. This can be
+                useful for students when comparing marks, scores, prices, or other
+                numerical values.
+            </p>
+
+            <h3>Who Can Use This Percentage Calculator?</h3>
+
+            <p>
+                Students, teachers, and anyone who needs a quick percentage
+                calculation can use this free online tool without registration.
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="container">
+        <p>
+            © <span id="currentYear"></span> Student Toolkit. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
