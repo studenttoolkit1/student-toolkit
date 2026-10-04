@@ -1,5 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://studenttoolkit1.github.io/student-toolkit/</loc>
-  </url>
+
+    <url>
+        <loc>https://studenttoolkit1.github.io/student-toolkit/</loc>
+    </url>
+
+    <url>
+        <loc>https://studenttoolkit1.github.io/student-toolkit/percentage-calculator.html</loc>
+    </url>
+
+    <url>
+        <loc>https://studenttoolkit1.github.io/student-toolkit/age-calculator.html</loc>
+    </url>
+
+    <url>
+        <loc>https://studenttoolkit1.github.io/student-toolkit/gpa-calculator.html</loc>
+    </url>
+
+    <url>
+        <loc>https://studenttoolkit1.github.io/student-toolkit/grade-calculator.html</loc>
+    </url>
+
+    <url>
+        <loc>https://studenttoolkit1.github.io/student-toolkit/attendance-calculator.html</loc>
+    </url>
+
 </urlset>
