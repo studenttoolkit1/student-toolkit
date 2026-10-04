@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grade Calculator - Free Online Grade Calculator | Student Toolkit</title>
+
+    <meta name="description" content="Use Student Toolkit's free grade calculator to calculate your percentage and grade from marks obtained and total marks quickly and easily.">
+
+    <meta name="keywords" content="grade calculator, free grade calculator, online grade calculator, marks percentage calculator, percentage and grade calculator, student grade calculator, calculate grade">
+
+    <meta name="author" content="Student Toolkit">
+
+    <link rel="canonical" href="https://studenttoolkit1.github.io/student-toolkit/grade-calculator.html">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+
+        <h1>Student Toolkit</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#tools">Student Tools</a>
+            <a href="index.html#study-tools">Study Tools</a>
+            <a href="index.html#resources">Resources</a>
+            <a href="index.html#faq">FAQ</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="hero">
+        <div class="container">
+
+            <h2>Free Grade Calculator</h2>
+
+            <p>
+                Calculate your percentage and grade from your marks quickly
+                and easily with our free online grade calculator.
+            </p>
+
+        </div>
+    </section>
+
+
+    <section class="calculator-section">
+        <div class="container">
+
+            <h2>Grade Calculator</h2>
+
+            <div class="calculator-card">
+
+                <h3>Calculate Your Grade</h3>
+
+                <label for="marksObtained">
+                    Marks Obtained
+                </label>
+
+                <input
+                    type="number"
+                    id="marksObtained"
+                    placeholder="Enter marks obtained"
+                    min="0"
+                >
+
+
+                <label for="totalMarks">
+                    Total Marks
+                </label>
+
+                <input
+                    type="number"
+                    id="totalMarks"
+                    placeholder="Enter total marks"
+                    min="1"
+                >
+
+
+                <button onclick="calculateGrade()">
+                    Calculate Grade
+                </button>
+
+                <p id="gradeResult"></p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="seo-content">
+        <div class="container">
+
+            <h2>Free Online Grade Calculator</h2>
+
+            <p>
+                Our free grade calculator helps students calculate their
+                percentage and find their grade from marks obtained and
+                total marks. It provides a quick and simple way to check
+                academic results.
+            </p>
+
+
+            <h3>How to Calculate Your Percentage</h3>
+
+            <p>
+                To calculate your percentage, divide the marks obtained
+                by the total marks and multiply the result by 100.
+            </p>
+
+            <p>
+                <strong>
+                    Percentage = (Marks Obtained ÷ Total Marks) × 100
+                </strong>
+            </p>
+
+
+            <h3>How to Use Our Grade Calculator</h3>
+
+            <p>
+                Enter the marks you obtained, enter the total possible
+                marks, and click the Calculate Grade button. The calculator
+                will calculate your percentage and display the corresponding
+                grade.
+            </p>
+
+
+            <h3>Why Use a Grade Calculator?</h3>
+
+            <p>
+                A grade calculator can save time and make it easier to
+                understand your academic performance. Students can quickly
+                calculate their percentage and check their grade without
+                doing the calculation manually.
+            </p>
+
+
+            <h3>Who Can Use This Grade Calculator?</h3>
+
+            <p>
+                Students, teachers, and anyone who needs to calculate a
+                percentage and grade from marks can use this free online
+                calculator.
+            </p>
+
+
+            <h3>Grade Calculation</h3>
+
+            <p>
+                This calculator uses the grading scale built into Student
+                Toolkit to determine the displayed grade from the calculated
+                percentage.
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="container">
+
+        <p>
+            © <span id="currentYear"></span> Student Toolkit.
+            All rights reserved.
+        </p>
+
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
