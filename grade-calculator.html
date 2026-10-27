@@ -1,8 +1,9 @@
-```html id="y6n0qf"
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Grade Calculator - Free Online Grade Calculator | Student Toolkit</title>
@@ -23,9 +24,11 @@
 <header>
     <div class="container">
 
-        <h1>Student Toolkit</h1>
+        <div class="site-title">
+            <a href="index.html">Student Toolkit</a>
+        </div>
 
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="index.html#tools">Student Tools</a>
             <a href="index.html#study-tools">Study Tools</a>
@@ -39,19 +42,24 @@
 
 <main>
 
+    <!-- ================= HERO ================= -->
+
     <section class="hero">
         <div class="container">
 
-            <h2>Free Grade Calculator</h2>
+            <h1>Free Grade Calculator</h1>
 
             <p>
-                Calculate your percentage and grade from your marks quickly
-                and easily with our free online grade calculator.
+                Calculate your percentage and grade from marks obtained and
+                total marks quickly and easily with our free online grade
+                calculator.
             </p>
 
         </div>
     </section>
 
+
+    <!-- ================= CALCULATOR ================= -->
 
     <section class="calculator-section">
         <div class="container">
@@ -62,6 +70,11 @@
 
                 <h3>Calculate Your Grade</h3>
 
+                <p>
+                    Enter your marks and total marks to calculate your
+                    percentage and corresponding grade.
+                </p>
+
                 <label for="marksObtained">
                     Marks Obtained
                 </label>
@@ -71,6 +84,8 @@
                     id="marksObtained"
                     placeholder="Enter marks obtained"
                     min="0"
+                    step="any"
+                    aria-label="Marks obtained"
                 >
 
 
@@ -83,14 +98,16 @@
                     id="totalMarks"
                     placeholder="Enter total marks"
                     min="1"
+                    step="any"
+                    aria-label="Total marks"
                 >
 
 
-                <button onclick="calculateGrade()">
+                <button type="button" onclick="calculateGrade()">
                     Calculate Grade
                 </button>
 
-                <p id="gradeResult"></p>
+                <p id="gradeResult" aria-live="polite"></p>
 
             </div>
 
@@ -98,24 +115,27 @@
     </section>
 
 
+    <!-- ================= SEO CONTENT ================= -->
+
     <section class="seo-content">
         <div class="container">
 
             <h2>Free Online Grade Calculator</h2>
 
             <p>
-                Our free grade calculator helps students calculate their
-                percentage and find their grade from marks obtained and
-                total marks. It provides a quick and simple way to check
-                academic results.
+                Student Toolkit's free grade calculator helps students
+                calculate their percentage and find their grade from marks
+                obtained and total marks. It provides a quick and simple way
+                to check academic results without performing the calculation
+                manually.
             </p>
 
 
-            <h3>How to Calculate Your Percentage</h3>
+            <h2>How to Calculate Your Percentage</h2>
 
             <p>
-                To calculate your percentage, divide the marks obtained
-                by the total marks and multiply the result by 100.
+                To calculate your percentage, divide the marks obtained by
+                the total marks and multiply the result by 100.
             </p>
 
             <p>
@@ -124,18 +144,30 @@
                 </strong>
             </p>
 
-
-            <h3>How to Use Our Grade Calculator</h3>
-
             <p>
-                Enter the marks you obtained, enter the total possible
-                marks, and click the Calculate Grade button. The calculator
-                will calculate your percentage and display the corresponding
-                grade.
+                For example, if you obtain 80 marks out of 100, your
+                percentage is 80%.
             </p>
 
 
-            <h3>Why Use a Grade Calculator?</h3>
+            <h2>How to Use Our Grade Calculator</h2>
+
+            <p>
+                Using the grade calculator is simple. Enter the marks you
+                obtained, enter the total possible marks, and click the
+                Calculate Grade button. The calculator will calculate your
+                percentage and display the corresponding grade.
+            </p>
+
+            <ol>
+                <li>Enter your marks obtained.</li>
+                <li>Enter the total possible marks.</li>
+                <li>Click the Calculate Grade button.</li>
+                <li>View your calculated percentage and grade.</li>
+            </ol>
+
+
+            <h2>Why Use a Grade Calculator?</h2>
 
             <p>
                 A grade calculator can save time and make it easier to
@@ -144,8 +176,13 @@
                 doing the calculation manually.
             </p>
 
+            <p>
+                It can be useful when checking exam marks, test scores,
+                assignments, or other academic results.
+            </p>
 
-            <h3>Who Can Use This Grade Calculator?</h3>
+
+            <h2>Who Can Use This Grade Calculator?</h2>
 
             <p>
                 Students, teachers, and anyone who needs to calculate a
@@ -154,27 +191,76 @@
             </p>
 
 
-            <h3>Grade Calculation</h3>
+            <h2>Grade Calculation</h2>
 
             <p>
                 This calculator uses the grading scale built into Student
                 Toolkit to determine the displayed grade from the calculated
-                percentage.
+                percentage. Grading systems can vary between schools,
+                colleges, universities, and countries, so users should
+                compare the result with their institution's official grading
+                policy when necessary.
             </p>
 
 
-            <h3>Other Student Calculators</h3>
+            <h2>Percentage and Grade Example</h2>
 
             <p>
-                Explore more free student calculators from Student Toolkit:
+                Suppose a student receives 72 marks out of 100. The
+                percentage is calculated as:
+            </p>
+
+            <p>
+                <strong>
+                    (72 ÷ 100) × 100 = 72%
+                </strong>
+            </p>
+
+            <p>
+                The calculator then uses its built-in grading scale to
+                determine the corresponding grade for that percentage.
+            </p>
+
+
+            <h2>Other Free Student Calculators</h2>
+
+            <p>
+                Explore more free calculators from Student Toolkit:
             </p>
 
             <ul>
-                <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
-                <li><a href="age-calculator.html">Age Calculator</a></li>
-                <li><a href="gpa-calculator.html">GPA Calculator</a></li>
-                <li><a href="attendance-calculator.html">Attendance Calculator</a></li>
+
+                <li>
+                    <a href="percentage-calculator.html">
+                        Percentage Calculator
+                    </a>
+                </li>
+
+                <li>
+                    <a href="age-calculator.html">
+                        Age Calculator
+                    </a>
+                </li>
+
+                <li>
+                    <a href="gpa-calculator.html">
+                        GPA Calculator
+                    </a>
+                </li>
+
+                <li>
+                    <a href="attendance-calculator.html">
+                        Attendance Calculator
+                    </a>
+                </li>
+
             </ul>
+
+            <p>
+                Visit the
+                <a href="index.html">Student Toolkit homepage</a>
+                to explore all available student tools and resources.
+            </p>
 
         </div>
     </section>
