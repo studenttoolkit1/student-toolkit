@@ -3,13 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>GPA Calculator - Free Online GPA Calculator | Student Toolkit</title>
 
-    <meta name="description" content="Use Student Toolkit's free GPA calculator to calculate your grade point average using course credits and grades quickly and easily.">
+    <meta name="description" content="Use Student Toolkit's free GPA calculator to calculate your grade point average using course credits and grades on a 4.0 scale.">
 
-    <meta name="keywords" content="GPA calculator, free GPA calculator, online GPA calculator, grade point average calculator, college GPA calculator, student GPA calculator, calculate GPA">
+    <meta name="keywords" content="GPA calculator, free GPA calculator, online GPA calculator, grade point average calculator, 4.0 GPA calculator, college GPA calculator, student GPA calculator, calculate GPA">
 
     <meta name="author" content="Student Toolkit">
 
@@ -22,34 +23,43 @@
 
 <header>
     <div class="container">
-        <h1>Student Toolkit</h1>
 
-        <nav>
+        <div class="site-title">
+            <a href="index.html">Student Toolkit</a>
+        </div>
+
+        <nav aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="index.html#tools">Student Tools</a>
             <a href="index.html#study-tools">Study Tools</a>
             <a href="index.html#resources">Resources</a>
             <a href="index.html#faq">FAQ</a>
         </nav>
+
     </div>
 </header>
 
 
 <main>
 
+    <!-- ================= HERO ================= -->
+
     <section class="hero">
         <div class="container">
 
-            <h2>Free GPA Calculator</h2>
+            <h1>Free GPA Calculator</h1>
 
             <p>
-                Calculate your GPA using course credits and grades quickly
-                and easily with our free online GPA calculator.
+                Calculate your Grade Point Average using course credits and
+                grades with our free online GPA calculator based on a 4.0
+                grading scale.
             </p>
 
         </div>
     </section>
 
+
+    <!-- ================= CALCULATOR ================= -->
 
     <section class="calculator-section">
         <div class="container">
@@ -60,6 +70,11 @@
 
                 <h3>Calculate Your GPA</h3>
 
+                <p>
+                    Add your courses, enter the credits for each course,
+                    select your grade, and calculate your GPA.
+                </p>
+
                 <div id="gpaRows">
 
                     <div class="gpa-row">
@@ -68,6 +83,7 @@
                             type="text"
                             placeholder="Course name"
                             class="course-name"
+                            aria-label="Course name"
                         >
 
                         <input
@@ -76,9 +92,13 @@
                             class="course-credit"
                             min="0"
                             step="0.5"
+                            aria-label="Course credits"
                         >
 
-                        <select class="course-grade">
+                        <select
+                            class="course-grade"
+                            aria-label="Course grade"
+                        >
 
                             <option value="">Grade</option>
 
@@ -102,15 +122,15 @@
                 </div>
 
 
-                <button onclick="addGpaRow()">
+                <button type="button" onclick="addGpaRow()">
                     + Add Subject
                 </button>
 
-                <button onclick="calculateGPA()">
+                <button type="button" onclick="calculateGPA()">
                     Calculate GPA
                 </button>
 
-                <p id="gpaResult"></p>
+                <p id="gpaResult" aria-live="polite"></p>
 
             </div>
 
@@ -118,82 +138,148 @@
     </section>
 
 
+    <!-- ================= SEO CONTENT ================= -->
+
     <section class="seo-content">
         <div class="container">
 
             <h2>Free Online GPA Calculator</h2>
 
             <p>
-                Our free GPA calculator helps students calculate their
-                Grade Point Average using course credits and grades.
-                Add your subjects, enter the credit value and select the
-                corresponding grade to calculate your GPA.
+                Student Toolkit's free GPA calculator helps students calculate
+                their Grade Point Average using course credits and grades.
+                Add your subjects, enter the credit value for each course,
+                select the corresponding grade, and calculate your GPA.
             </p>
 
 
-            <h3>What Is GPA?</h3>
+            <h2>What Is GPA?</h2>
 
             <p>
                 GPA stands for Grade Point Average. It is a numerical
-                representation of a student's academic performance.
-                GPA is commonly calculated using grade points and course
+                representation of a student's academic performance. GPA is
+                commonly calculated by combining grade points with the credit
+                value of each course.
+            </p>
+
+
+            <h2>How Is GPA Calculated?</h2>
+
+            <p>
+                A weighted GPA is generally calculated by multiplying each
+                course's grade points by its credits, adding the resulting
+                grade points, and dividing the total by the total number of
                 credits.
             </p>
 
-
-            <h3>How to Calculate GPA</h3>
+            <p>
+                <strong>Formula:</strong>
+                GPA = Total Quality Points ÷ Total Credits
+            </p>
 
             <p>
-                GPA can be calculated by dividing total grade points by
-                total credits. The basic formula is:
+                For example, if your courses have different credit values,
+                a course with more credits has a greater effect on your
+                overall GPA.
             </p>
 
 
+            <h2>How to Use This GPA Calculator</h2>
+
             <p>
-                <strong>GPA = Total Grade Points ÷ Total Credits</strong>
+                Follow these simple steps to calculate your GPA:
+            </p>
+
+            <ol>
+                <li>Enter the name of your course.</li>
+                <li>Enter the number of credits for the course.</li>
+                <li>Select the grade you received.</li>
+                <li>Click <strong>+ Add Subject</strong> to add more courses.</li>
+                <li>Click <strong>Calculate GPA</strong> to see your result.</li>
+            </ol>
+
+
+            <h2>4.0 GPA Scale</h2>
+
+            <p>
+                This calculator uses a 4.0 grading scale. The available
+                grade values range from A+ and A at 4.0 points to F at
+                0.0 points, with intermediate grades assigned their
+                corresponding grade-point values.
+            </p>
+
+            <p>
+                Grading systems can vary between schools, colleges, and
+                universities. If your institution uses a different grading
+                scale, compare its official grading policy with the values
+                used by this calculator.
             </p>
 
 
-            <h3>How to Use Our GPA Calculator</h3>
+            <h2>Why Use a GPA Calculator?</h2>
 
             <p>
-                Enter each course name, enter the number of credits,
-                select the grade you received, and click Calculate GPA.
-                You can use the Add Subject button to add more courses.
+                Calculating GPA manually can take time, especially when you
+                have several courses with different credit values. A GPA
+                calculator makes it easier to estimate your overall grade
+                point average quickly.
+            </p>
+
+            <p>
+                Students can use this tool to check their current academic
+                performance, estimate their semester GPA, or understand how
+                different course grades may affect their average.
             </p>
 
 
-            <h3>Why Use a GPA Calculator?</h3>
+            <h2>Who Can Use This GPA Calculator?</h2>
 
             <p>
-                A GPA calculator makes it easier to calculate your academic
-                average without doing the calculations manually. It can
-                help students quickly check their GPA for their courses
-                and academic records.
+                This free online GPA calculator can be useful for students
+                in schools, colleges, universities, and other educational
+                institutions that use a compatible 4.0 grading scale.
             </p>
 
 
-            <h3>Who Can Use This GPA Calculator?</h3>
+            <h2>Other Free Student Calculators</h2>
 
             <p>
-                Students in schools, colleges, universities, and other
-                educational institutions can use this free online GPA
-                calculator to estimate their grade point average.
-            </p>
-
-
-            <h3>Other Student Calculators</h3>
-
-            <p>
-                Explore more free student calculators from Student Toolkit:
+                Explore more free calculators from Student Toolkit:
             </p>
 
             <ul>
-                <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
-                <li><a href="age-calculator.html">Age Calculator</a></li>
-                <li><a href="grade-calculator.html">Grade Calculator</a></li>
-                <li><a href="attendance-calculator.html">Attendance Calculator</a></li>
+
+                <li>
+                    <a href="percentage-calculator.html">
+                        Percentage Calculator
+                    </a>
+                </li>
+
+                <li>
+                    <a href="age-calculator.html">
+                        Age Calculator
+                    </a>
+                </li>
+
+                <li>
+                    <a href="grade-calculator.html">
+                        Grade Calculator
+                    </a>
+                </li>
+
+                <li>
+                    <a href="attendance-calculator.html">
+                        Attendance Calculator
+                    </a>
+                </li>
+
             </ul>
+
+            <p>
+                Visit the
+                <a href="index.html">Student Toolkit homepage</a>
+                to explore all available student tools and resources.
+            </p>
 
         </div>
     </section>
