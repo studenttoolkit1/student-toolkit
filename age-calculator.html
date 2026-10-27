@@ -3,13 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Age Calculator - Free Online Age Calculator | Student Toolkit</title>
 
-    <meta name="description" content="Use Student Toolkit's free age calculator to calculate your exact age in years, months, and days quickly and easily.">
+    <meta name="description" content="Use Student Toolkit's free age calculator to calculate your exact age in years, months, and days. Calculate your age quickly from your date of birth.">
 
-    <meta name="keywords" content="age calculator, free age calculator, calculate age, exact age calculator, age in years months days, online age calculator">
+    <meta name="keywords" content="age calculator, free age calculator, calculate age, exact age calculator, age in years months days, online age calculator, date of birth calculator">
 
     <meta name="author" content="Student Toolkit">
 
@@ -22,31 +23,43 @@
 
 <header>
     <div class="container">
-        <h1>Student Toolkit</h1>
 
-        <nav>
+        <div class="site-title">
+            <a href="index.html">Student Toolkit</a>
+        </div>
+
+        <nav aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="index.html#tools">Student Tools</a>
             <a href="index.html#study-tools">Study Tools</a>
             <a href="index.html#resources">Resources</a>
             <a href="index.html#faq">FAQ</a>
         </nav>
+
     </div>
 </header>
 
+
 <main>
+
+    <!-- ================= HERO ================= -->
 
     <section class="hero">
         <div class="container">
-            <h2>Free Age Calculator</h2>
+
+            <h1>Free Age Calculator</h1>
 
             <p>
-                Calculate your exact age in years, months, and days quickly
-                with our free online age calculator.
+                Calculate your exact age in years, months, and days using
+                your date of birth and a selected date with our free online
+                age calculator.
             </p>
+
         </div>
     </section>
 
+
+    <!-- ================= CALCULATOR ================= -->
 
     <section class="calculator-section">
         <div class="container">
@@ -62,6 +75,7 @@
                 <input
                     type="date"
                     id="birthDate"
+                    aria-label="Date of birth"
                 >
 
                 <label for="ageAtDate">Calculate Age At</label>
@@ -69,13 +83,14 @@
                 <input
                     type="date"
                     id="ageAtDate"
+                    aria-label="Date to calculate age at"
                 >
 
-                <button onclick="calculateAge()">
+                <button type="button" onclick="calculateAge()">
                     Calculate Age
                 </button>
 
-                <p id="ageResult"></p>
+                <p id="ageResult" aria-live="polite"></p>
 
             </div>
 
@@ -83,53 +98,127 @@
     </section>
 
 
+    <!-- ================= SEO CONTENT ================= -->
+
     <section class="seo-content">
         <div class="container">
 
             <h2>Free Online Age Calculator</h2>
 
             <p>
-                Our free age calculator helps you calculate your exact age
-                from your date of birth. It can show your age in years,
-                months, and days quickly and easily.
+                Student Toolkit's free age calculator helps you calculate your
+                exact age from your date of birth. The calculator can show the
+                difference between your birth date and a selected date in
+                years, months, and days.
             </p>
 
-            <h3>How Does an Age Calculator Work?</h3>
+
+            <h2>How Does an Age Calculator Work?</h2>
 
             <p>
-                An age calculator compares your date of birth with a selected
-                date and calculates the difference between the two dates.
-                This makes it easy to find your exact age.
+                An age calculator compares a person's date of birth with a
+                selected date. It calculates the difference between the two
+                dates and presents the result as years, months, and days.
             </p>
 
-            <h3>How to Use the Age Calculator</h3>
-
             <p>
-                Enter your date of birth, choose the date you want to calculate
-                your age at, and click the Calculate Age button. The calculator
-                will display your age in years, months, and days.
+                For example, if a person was born on January 15, 2010, the
+                calculator can determine their age on a later date by
+                calculating the exact difference between those two dates.
             </p>
 
-            <h3>Why Use an Age Calculator?</h3>
+
+            <h2>How to Use the Age Calculator</h2>
 
             <p>
-                An online age calculator can save time when you need to
-                calculate an exact age for school forms, applications,
-                personal records, or everyday date calculations.
+                Using this age calculator is simple. Enter your date of birth
+                in the first field, select the date you want to calculate your
+                age at in the second field, and then click the Calculate Age
+                button.
             </p>
 
-            <h3>Other Student Calculators</h3>
+            <ol>
+                <li>Enter your date of birth.</li>
+                <li>Select the date you want to calculate your age at.</li>
+                <li>Click the Calculate Age button.</li>
+                <li>View your age in years, months, and days.</li>
+            </ol>
+
+
+            <h2>Why Use an Age Calculator?</h2>
 
             <p>
-                Explore more free student calculators from Student Toolkit:
+                Calculating an exact age manually can be difficult when the
+                dates include different months or leap years. An online age
+                calculator can make the calculation faster and easier.
+            </p>
+
+            <p>
+                Students and other users can use an age calculator when
+                checking school forms, applications, records, important dates,
+                or simply finding their exact age.
+            </p>
+
+
+            <h2>What Information Do You Need?</h2>
+
+            <p>
+                You only need two dates to use this calculator: your date of
+                birth and the date at which you want to calculate your age.
+                The calculator then calculates the difference between those
+                dates.
+            </p>
+
+
+            <h2>Can I Calculate My Age on a Specific Date?</h2>
+
+            <p>
+                Yes. Enter your date of birth and choose any valid date in the
+                Calculate Age At field. The calculator can then determine your
+                age on that selected date.
+            </p>
+
+
+            <h2>Other Free Student Calculators</h2>
+
+            <p>
+                Student Toolkit provides several free calculators for common
+                student and everyday calculations:
             </p>
 
             <ul>
-                <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
-                <li><a href="gpa-calculator.html">GPA Calculator</a></li>
-                <li><a href="grade-calculator.html">Grade Calculator</a></li>
-                <li><a href="attendance-calculator.html">Attendance Calculator</a></li>
+
+                <li>
+                    <a href="percentage-calculator.html">
+                        Percentage Calculator
+                    </a>
+                </li>
+
+                <li>
+                    <a href="gpa-calculator.html">
+                        GPA Calculator
+                    </a>
+                </li>
+
+                <li>
+                    <a href="grade-calculator.html">
+                        Grade Calculator
+                    </a>
+                </li>
+
+                <li>
+                    <a href="attendance-calculator.html">
+                        Attendance Calculator
+                    </a>
+                </li>
+
             </ul>
+
+            <p>
+                Visit the
+                <a href="index.html">Student Toolkit homepage</a>
+                to explore all available student tools and resources.
+            </p>
 
         </div>
     </section>
